@@ -31,3 +31,5 @@ let currentDate = function(){
     $("#currentDay").text(date);
 };
 currentDate();
+
+let currentHour = moment().hour();
