@@ -33,3 +33,5 @@ let currentDate = function(){
 currentDate();
 
 let currentHour = moment().hour();
+
+let = colourChange = function();
