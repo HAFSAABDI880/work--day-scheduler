@@ -34,4 +34,22 @@ currentDate();
 
 let currentHour = moment().hour();
 
-let = colourChange = function();
+let = colourChange = function() {
+    $(".time-block").each(function () {
+        let hourBlock = parseInt($(this).attr("id"));
+        if (hourBlock < currentHour) {
+          $(this).addClass("past");
+        }
+        else if (hourBlock === currentHour) {
+          $(this).removeClass("past");
+          $(this).addClass("present");
+        }
+        else {
+          $(this).removeClass("present")
+          $(this).removeClass("past")
+          $(this).addClass("future")
+        }
+    
+      });
+};
+colourChange();
