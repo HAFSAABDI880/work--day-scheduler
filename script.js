@@ -34,7 +34,7 @@ currentDate();
 
 let currentHour = moment().hour();
 
-let = colourChange = function() {
+let colourChange = function() {
     $(".time-block").each(function () {
         let hourBlock = parseInt($(this).attr("id"));
         if (hourBlock < currentHour) {
